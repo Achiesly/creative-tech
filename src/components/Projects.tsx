@@ -1,5 +1,5 @@
 
-import { Code, Link, Palette, Eye } from "lucide-react";
+import { Code, Link } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Projects = () => {
@@ -8,43 +8,25 @@ const Projects = () => {
       title: "E-Commerce Platform",
       description: "A modern e-commerce solution with React, featuring user authentication, payment integration, and responsive design.",
       tech: ["React", "TypeScript", "Tailwind CSS", "Stripe"],
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&h=300&fit=crop",
-      type: "development"
-    },
-    {
-      title: "Brand Identity Design",
-      description: "Complete brand identity package including logo design, color palette, typography, and brand guidelines for a tech startup.",
-      tech: ["Adobe Illustrator", "Adobe Photoshop", "Brand Strategy"],
-      image: "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=500&h=300&fit=crop",
-      type: "design"
+      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&h=300&fit=crop"
     },
     {
       title: "Task Management App",
-      description: "Collaborative task management application with real-time updates, drag-and-drop functionality, and intuitive UI design.",
-      tech: ["React", "Node.js", "MongoDB", "UI/UX Design"],
-      image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=500&h=300&fit=crop",
-      type: "development"
-    },
-    {
-      title: "Magazine Layout Design",
-      description: "Modern magazine layout design with creative typography, stunning visuals, and reader-friendly information hierarchy.",
-      tech: ["Adobe InDesign", "Adobe Photoshop", "Typography"],
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&h=300&fit=crop",
-      type: "design"
+      description: "Collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.",
+      tech: ["React", "Node.js", "MongoDB", "Socket.io"],
+      image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=500&h=300&fit=crop"
     },
     {
       title: "Portfolio Website",
       description: "A responsive portfolio website showcasing clean design principles and smooth animations built with modern web technologies.",
       tech: ["React", "Tailwind CSS", "Framer Motion"],
-      image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=500&h=300&fit=crop",
-      type: "development"
+      image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=500&h=300&fit=crop"
     },
     {
-      title: "Digital Illustration Series",
-      description: "Creative digital illustrations combining modern design trends with artistic expression for various client projects.",
-      tech: ["Adobe Illustrator", "Digital Art", "Creative Design"],
-      image: "https://images.unsplash.com/photo-1541961017774-22349e4a1262?w=500&h=300&fit=crop",
-      type: "design"
+      title: "Weather Dashboard",
+      description: "Interactive weather dashboard with location-based forecasts, beautiful data visualizations, and responsive design.",
+      tech: ["React", "Chart.js", "Weather API"],
+      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=500&h=300&fit=crop"
     }
   ];
 
@@ -56,12 +38,9 @@ const Projects = () => {
             Featured Projects
           </h2>
           <div className="w-16 sm:w-24 h-1 bg-gradient-to-r from-amber-600 to-orange-600 mx-auto rounded-full"></div>
-          <p className="text-lg text-gray-600 mt-4 max-w-2xl mx-auto">
-            A showcase of my web development and graphic design work
-          </p>
         </div>
         
-        <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+        <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
           {projects.map((project, index) => (
             <div key={index} className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:scale-105">
               <div className="relative overflow-hidden">
@@ -71,15 +50,6 @@ const Projects = () => {
                   className="w-full h-40 sm:h-48 object-cover transition-transform duration-300 hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
-                <div className="absolute top-3 right-3">
-                  <span className={`px-2 py-1 rounded-full text-xs font-medium ${
-                    project.type === 'development' 
-                      ? 'bg-emerald-100 text-emerald-800' 
-                      : 'bg-purple-100 text-purple-800'
-                  }`}>
-                    {project.type === 'development' ? 'Development' : 'Design'}
-                  </span>
-                </div>
               </div>
               
               <div className="p-4 sm:p-6">
@@ -96,12 +66,12 @@ const Projects = () => {
                 
                 <div className="flex flex-col sm:flex-row gap-2 sm:gap-3">
                   <Button size="sm" className="bg-gradient-to-r from-amber-600 to-orange-600 hover:from-amber-700 hover:to-orange-700 w-full sm:w-auto">
-                    {project.type === 'development' ? <Code className="w-4 h-4 mr-2" /> : <Palette className="w-4 h-4 mr-2" />}
-                    {project.type === 'development' ? 'Code' : 'Design'}
+                    <Code className="w-4 h-4 mr-2" />
+                    Code
                   </Button>
                   <Button size="sm" variant="outline" className="border-amber-600 text-amber-600 hover:bg-amber-600 w-full sm:w-auto">
-                    <Eye className="w-4 h-4 mr-2" />
-                    View
+                    <Link className="w-4 h-4 mr-2" />
+                    Live Demo
                   </Button>
                 </div>
               </div>
