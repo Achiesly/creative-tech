@@ -1,6 +1,7 @@
-
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
+import { Link } from "react-router-dom";
+import Logo from "@/components/logo";
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -26,9 +27,13 @@ const Navigation = () => {
     }`}>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 py-3 sm:py-4">
         <div className="flex justify-between items-center">
-          <div className="text-xl sm:text-2xl font-bold bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">
-            Portfolio
-          </div>
+
+          
+        <div className="text-xl sm:text-2xl font-bold">
+            <Link to="/">
+             <Logo />
+             </Link>
+        </div>
           
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-6 lg:space-x-8">

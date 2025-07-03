@@ -10,15 +10,18 @@ export default {
 	],
 	prefix: "",
 	theme: {
-		container: {
-			center: true,
-			padding: '2rem',
-			screens: {
-				'2xl': '1400px'
-			}
-		},
-		extend: {
-			colors: {
+container: {
+	center: true,
+	padding: '2rem',
+	screens: {
+		'2xl': '1400px'
+	}
+},
+extend: {
+	fontFamily: {
+		sora: ['Sora', 'sans-serif'],
+	},
+	colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',

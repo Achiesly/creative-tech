@@ -44,7 +44,7 @@ const Contact = () => {
               </div>
             </div>
             
-            <div className="flex space-x-3 sm:space-x-4 justify-center lg:justify-start">
+            <div className="flex space-x-3 sm:space-x-4 justify-start lg:justify-start">
               
               <a
               href="https://wa.me/19297737403"
@@ -117,7 +117,7 @@ const Contact = () => {
         
         <div className="text-center mt-12 sm:mt-16 pt-6 sm:pt-8 border-t border-white/20">
           <p className="text-gray-300 text-sm sm:text-base">
-            Copyright © {new Date().getFullYear()} Portfolio. All right reserved </p>
+            Copyright © {new Date().getFullYear()} CreativeTech. All right reserved </p>
         </div>
       </div>
     </section>

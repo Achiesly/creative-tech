@@ -6,29 +6,29 @@ const Projects = () => {
 
     {
       title: "Mordern web app",
-      description: "A responsive portfolio website showcasing clean design principles and smooth animations built with modern web technologies.",
-      tech: ["React", "Tailwind CSS", "Framer Motion"],
-      image: "/images/web-app.jpg",
+      description: "A developer-friendly identity verification and compliance platform offering phone-based ID checks, document and selfie verification.",
+      tech: ["React", "Tailwind CSS", "Python", "Stripe", "Javascript"],
+      image: "/images/web-app.webp",
       live: "https://cognitohq.com"
     },
     {
       title: "Xmoney App",
-      description: "Collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.",
-      tech: ["React", "Node.js", "MongoDB", "Socket.io"],
+      description: "A unified payments platform offering global card and crypto support, subscription billing, invoicing, and embedded payment links.",
+      tech: ["React", "Node.js", "MongoDB", "Socket.io", "API"],
       image: "/images/task-app.jpg",
       live: "https://www.xmoney.com"
     },
    {
       title: "E-Commerce Platform",
-      description: "A modern e-commerce solution with React, featuring user authentication, payment integration, and responsive design.",
-      tech: ["React", "TypeScript", "Tailwind CSS", "Stripe"],
+      description: "A visually rich coffee ecommerce experience combining storytelling, modern design, and smooth navigation to showcase premium products and a refined brand identity.",
+      tech: ["WordPress", "Shopify", " Woocommerce", "Stripe"],
       image: "/images/platform.jpg",
       live: "https://ceremonycoffee.com"
     },
     {
       title: "ForcusNest App",
-      description: "Interactive weather dashboard with location-based forecasts, beautiful data visualizations, and responsive design.",
-      tech: ["React", "Chart.js", "Weather API"],
+      description: "A modern web timer built on the Pomodoro technique—offering customizable work and break sessions, real-time tracking, and visual focus cues to boost productivity and surpass distractions.",
+      tech: ["Typescript", "Tailwind CSS", "Next.js"],
       image: "/images/modern-app.jpg",
       live: "https://www.forcusnest.online"
     }

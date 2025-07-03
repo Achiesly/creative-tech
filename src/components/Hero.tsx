@@ -1,4 +1,3 @@
-
 import { Code } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -9,36 +8,48 @@ const Hero = () => {
   };
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center px-4 sm:px-6 pt-20 -mt-1 bg-gray-100">
-      <div className="max-w-4xl mx-auto text-center animate-fade-in">
+    <section
+      id="home"
+      className="relative min-h-screen flex items-center justify-center px-6 pt-24 sm:pt-32 bg-gray-50 overflow-hidden"
+    >
+      {/* Blurred gradient background accent */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute -top-20 left-1/2 w-[480px] h-[480px] bg-gradient-to-br from-emerald-400 to-teal-500 rounded-full blur-[120px] opacity-30 transform -translate-x-1/2" />
+      </div>
+
+      <div className="relative max-w-4xl mx-auto text-center z-10 animate-fade-in">
+        {/* Icon Avatar */}
         <div className="mb-6 sm:mb-8">
           <div className="w-24 h-24 sm:w-32 sm:h-32 mx-auto mb-4 sm:mb-6 rounded-full bg-gradient-to-r from-emerald-500 to-teal-600 flex items-center justify-center shadow-xl">
             <Code className="w-12 h-12 sm:w-16 sm:h-16 text-white" />
           </div>
         </div>
-        
-        <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 sm:mb-6 bg-gradient-to-r from-gray-900 via-emerald-800 to-teal-800 bg-clip-text text-transparent leading-tight">
+
+        {/* Hero Heading */}
+        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight mb-4 sm:mb-6 bg-gradient-to-r from-gray-900 via-emerald-800 to-teal-700 bg-clip-text text-transparent leading-tight">
           Web Developer
         </h1>
-        
-        <p className="text-lg sm:text-xl md:text-2xl text-gray-700 mb-6 sm:mb-8 max-w-3xl mx-auto leading-relaxed px-4">
-          Crafting beautiful, responsive websites and web applications with modern technologies. 
-          Passionate about creating exceptional digital experiences.
+
+        {/* Subtitle */}
+        <p className="text-lg sm:text-xl md:text-2xl text-gray-700 mb-8 max-w-3xl mx-auto leading-relaxed">
+          I craft beautiful, fast, and responsive websites using modern web technologies-focused on delivering delightful digital experiences.
         </p>
-        
-        <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4">
-          <Button 
+
+        {/* Buttons */}
+        <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
+          <Button
             onClick={() => scrollToSection("projects")}
-            size="lg" 
-            className="bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 text-white px-6 sm:px-8 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 w-full sm:w-auto"
+            size="lg"
+            className="bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 text-white px-8 py-3 rounded-full transition-all duration-300 transform w-full sm:w-auto"
           >
             View My Work
           </Button>
-          <Button 
+
+          <Button
             onClick={() => scrollToSection("contact")}
-            variant="outline" 
+            variant="outline"
             size="lg"
-            className="border-2 border-emerald-600 text-emerald-600 hover:bg-emerald-600 hover:text-white px-6 sm:px-8 py-3 rounded-full transition-all duration-300 w-full sm:w-auto"
+            className="border-2 border-emerald-600 text-emerald-700 hover:bg-emerald-600 hover:text-white px-8 py-3 rounded-full transition-all duration-300 w-full sm:w-auto"
           >
             Get In Touch
           </Button>

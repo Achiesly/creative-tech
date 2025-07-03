@@ -2,7 +2,7 @@ import AnimatedCharacter from "@/components/Animate/AnimatedCharacter";
 
 const About = () => {
   return (
-    <section id="about" className="relative py-16 sm:py-20 px-4 sm:px-6 overflow-hidden bg-gray-100 -mt-12">
+    <section id="about" className="relative py-16 sm:py-20 px-4 sm:px-6 overflow-hidden bg-gray-50 -mt-12">
       <div className="max-w-6xl mx-auto">
 
         <div className="text-center mb-12 sm:mb-16">
