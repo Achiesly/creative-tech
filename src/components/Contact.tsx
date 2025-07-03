@@ -3,6 +3,8 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Github, Linkedin, Twitter, User } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa";
+import { RiTwitterXFill } from "react-icons/ri";
 
 const Contact = () => {
   return (
@@ -41,51 +43,79 @@ const Contact = () => {
             </div>
             
             <div className="flex space-x-3 sm:space-x-4 justify-center lg:justify-start">
-              <a href="#" className="w-10 h-10 sm:w-12 sm:h-12 bg-gray-800 hover:bg-emerald-600 rounded-full flex items-center justify-center transition-colors duration-300">
-                <Github className="w-5 h-5 sm:w-6 sm:h-6" />
+              
+              <a
+              href="https://wa.me/19297737403"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-10 h-10 sm:w-12 sm:h-12 bg-green-600 hover:bg-emerald-600 rounded-full flex items-center justify-center transition-colors duration-300"
+              aria-label="WhatsApp"
+              >
+              <FaWhatsapp className="w-5 h-5 sm:w-6 sm:h-6" />
               </a>
-              <a href="#" className="w-10 h-10 sm:w-12 sm:h-12 bg-gray-800 hover:bg-emerald-600 rounded-full flex items-center justify-center transition-colors duration-300">
-                <Linkedin className="w-5 h-5 sm:w-6 sm:h-6" />
-              </a>
-              <a href="#" className="w-10 h-10 sm:w-12 sm:h-12 bg-gray-800 hover:bg-emerald-600 rounded-full flex items-center justify-center transition-colors duration-300">
-                <Twitter className="w-5 h-5 sm:w-6 sm:h-6" />
+
+              <a
+              href="https://x.com/CreativeTech22"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-10 h-10 sm:w-12 sm:h-12 bg-gray-800 hover:bg-gray-700 rounded-full flex items-center justify-center transition-colors duration-300"
+              aria-label="Twitter"
+              >
+              
+              <RiTwitterXFill className="w-5 h-5 sm:w-6 sm:h-6" />
               </a>
             </div>
           </div>
           
           <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 sm:p-8">
-            <form className="space-y-4 sm:space-y-6">
-              <div className="grid sm:grid-cols-2 gap-3 sm:gap-4">
-                <Input 
-                  placeholder="Your Name" 
-                  className="bg-white/10 border-white/20 text-white placeholder:text-gray-300 text-sm sm:text-base"
-                />
-                <Input 
-                  placeholder="Your Email" 
-                  type="email"
-                  className="bg-white/10 border-white/20 text-white placeholder:text-gray-300 text-sm sm:text-base"
-                />
-              </div>
-              <Input 
-                placeholder="Subject" 
-                className="bg-white/10 border-white/20 text-white placeholder:text-gray-300 text-sm sm:text-base"
-              />
-              <Textarea 
-                placeholder="Your Message" 
-                rows={4}
-                className="bg-white/10 border-white/20 text-white placeholder:text-gray-300 text-sm sm:text-base resize-none"
-              />
-              <Button className="w-full bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 text-white py-2 sm:py-3 rounded-lg font-semibold transition-all duration-300">
-                Send Message
-              </Button>
-            </form>
+        <form
+          action="https://formspree.io/f/mnnvrbbk"
+          method="POST"
+          className="space-y-4 sm:space-y-6"
+        >
+
+            {/* Redirect input */}
+          <input type="hidden" name="_redirect" value="https://creative-tech-xi.vercel.app/thank-you" />
+
+          <div className="grid sm:grid-cols-2 gap-3 sm:gap-4">
+            <Input 
+              placeholder="Your Name" 
+              name="name"
+              required
+              className="bg-white/10 border-white/20 text-white placeholder:text-gray-300 text-sm sm:text-base"
+            />
+            <Input 
+              placeholder="Your Email" 
+              name="email"
+              type="email"
+              required
+              className="bg-white/10 border-white/20 text-white placeholder:text-gray-300 text-sm sm:text-base"
+            />
+          </div>
+          <Input 
+            placeholder="Subject" 
+            name="subject"
+            required
+            className="bg-white/10 border-white/20 text-white placeholder:text-gray-300 text-sm sm:text-base"
+          />
+          <Textarea 
+            placeholder="Your Message" 
+            name="message"
+            rows={4}
+            required
+            className="bg-white/10 border-white/20 text-white placeholder:text-gray-300 text-sm sm:text-base resize-none"
+          />
+          <Button type="submit" className="w-full bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 text-white py-2 sm:py-3 rounded-lg font-semibold transition-all duration-300">
+            Send Message
+          </Button>
+        </form>
+
           </div>
         </div>
         
         <div className="text-center mt-12 sm:mt-16 pt-6 sm:pt-8 border-t border-white/20">
           <p className="text-gray-400 text-sm sm:text-base">
-            © 2024 Portfolio. Designed & Built with ❤️ using React & Tailwind CSS
-          </p>
+            Copyright © {new Date().getFullYear()} Portfolio. All right reserved </p>
         </div>
       </div>
     </section>
