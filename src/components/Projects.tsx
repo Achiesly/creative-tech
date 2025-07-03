@@ -3,33 +3,34 @@ import { Button } from "@/components/ui/button";
 
 const Projects = () => {
   const projects = [
+
     {
+      title: "Mordern web app",
+      description: "A responsive portfolio website showcasing clean design principles and smooth animations built with modern web technologies.",
+      tech: ["React", "Tailwind CSS", "Framer Motion"],
+      image: "/images/web-app.jpg",
+      live: "https://cognitohq.com"
+    },
+    {
+      title: "Xmoney App",
+      description: "Collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.",
+      tech: ["React", "Node.js", "MongoDB", "Socket.io"],
+      image: "/images/task-app.jpg",
+      live: "https://www.xmoney.com"
+    },
+   {
       title: "E-Commerce Platform",
       description: "A modern e-commerce solution with React, featuring user authentication, payment integration, and responsive design.",
       tech: ["React", "TypeScript", "Tailwind CSS", "Stripe"],
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&h=300&fit=crop",
-      live: "https://example.com/ecommerce"
+      image: "/images/platform.jpg",
+      live: "https://ceremonycoffee.com"
     },
     {
-      title: "Task Management App",
-      description: "Collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.",
-      tech: ["React", "Node.js", "MongoDB", "Socket.io"],
-      image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=500&h=300&fit=crop",
-      live: "https://example.com/ecommerce"
-    },
-    {
-      title: "Portfolio Website",
-      description: "A responsive portfolio website showcasing clean design principles and smooth animations built with modern web technologies.",
-      tech: ["React", "Tailwind CSS", "Framer Motion"],
-      image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=500&h=300&fit=crop",
-      live: "https://example.com/ecommerce"
-    },
-    {
-      title: "Weather Dashboard",
+      title: "ForcusNest App",
       description: "Interactive weather dashboard with location-based forecasts, beautiful data visualizations, and responsive design.",
       tech: ["React", "Chart.js", "Weather API"],
-      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=500&h=300&fit=crop",
-      live: "https://example.com/ecommerce"
+      image: "/images/modern-app.jpg",
+      live: "https://www.forcusnest.online"
     }
   ];
 
