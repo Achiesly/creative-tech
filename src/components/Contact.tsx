@@ -6,13 +6,13 @@ import { Github, Linkedin, Twitter, User } from "lucide-react";
 
 const Contact = () => {
   return (
-    <section id="contact" className="py-20 px-6 bg-gradient-to-br from-gray-900 to-blue-900 text-white">
+    <section id="contact" className="py-20 px-6 bg-gradient-to-br from-slate-900 via-gray-900 to-emerald-900 text-white">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             Let's Work Together
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-blue-400 to-purple-400 mx-auto rounded-full"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-emerald-400 to-teal-400 mx-auto rounded-full"></div>
           <p className="text-xl text-gray-300 mt-6 max-w-2xl mx-auto">
             Ready to bring your ideas to life? I'd love to hear about your project and discuss how we can create something amazing together.
           </p>
@@ -30,7 +30,7 @@ const Contact = () => {
             
             <div className="space-y-4">
               <div className="flex items-center space-x-4">
-                <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center">
+                <div className="w-12 h-12 bg-emerald-600 rounded-full flex items-center justify-center">
                   <User className="w-6 h-6" />
                 </div>
                 <div>
@@ -41,13 +41,13 @@ const Contact = () => {
             </div>
             
             <div className="flex space-x-4">
-              <a href="#" className="w-12 h-12 bg-gray-800 hover:bg-blue-600 rounded-full flex items-center justify-center transition-colors duration-300">
+              <a href="#" className="w-12 h-12 bg-gray-800 hover:bg-emerald-600 rounded-full flex items-center justify-center transition-colors duration-300">
                 <Github className="w-6 h-6" />
               </a>
-              <a href="#" className="w-12 h-12 bg-gray-800 hover:bg-blue-600 rounded-full flex items-center justify-center transition-colors duration-300">
+              <a href="#" className="w-12 h-12 bg-gray-800 hover:bg-emerald-600 rounded-full flex items-center justify-center transition-colors duration-300">
                 <Linkedin className="w-6 h-6" />
               </a>
-              <a href="#" className="w-12 h-12 bg-gray-800 hover:bg-blue-600 rounded-full flex items-center justify-center transition-colors duration-300">
+              <a href="#" className="w-12 h-12 bg-gray-800 hover:bg-emerald-600 rounded-full flex items-center justify-center transition-colors duration-300">
                 <Twitter className="w-6 h-6" />
               </a>
             </div>
@@ -75,7 +75,7 @@ const Contact = () => {
                 rows={4}
                 className="bg-white/10 border-white/20 text-white placeholder:text-gray-300"
               />
-              <Button className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white py-3 rounded-lg font-semibold transition-all duration-300">
+              <Button className="w-full bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 text-white py-3 rounded-lg font-semibold transition-all duration-300">
                 Send Message
               </Button>
             </form>

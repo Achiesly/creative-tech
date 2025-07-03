@@ -9,7 +9,7 @@ const About = () => {
           <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">
             About Me
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto rounded-full"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-emerald-600 to-teal-600 mx-auto rounded-full"></div>
         </div>
         
         <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -29,7 +29,7 @@ const About = () => {
             </p>
             <div className="flex flex-wrap gap-4 mt-6">
               {["Problem Solving", "Creative Design", "Clean Code", "User Experience"].map((trait) => (
-                <span key={trait} className="px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">
+                <span key={trait} className="px-4 py-2 bg-emerald-100 text-emerald-800 rounded-full text-sm font-medium">
                   {trait}
                 </span>
               ))}
@@ -37,8 +37,8 @@ const About = () => {
           </div>
           
           <div className="relative">
-            <div className="w-80 h-80 mx-auto bg-gradient-to-br from-blue-100 to-purple-100 rounded-3xl flex items-center justify-center shadow-xl">
-              <User className="w-32 h-32 text-blue-600" />
+            <div className="w-80 h-80 mx-auto bg-gradient-to-br from-emerald-100 to-teal-100 rounded-3xl flex items-center justify-center shadow-xl">
+              <User className="w-32 h-32 text-emerald-600" />
             </div>
           </div>
         </div>

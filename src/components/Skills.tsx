@@ -32,14 +32,14 @@ const Skills = () => {
           <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">
             Skills & Expertise
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto rounded-full"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-purple-600 to-pink-600 mx-auto rounded-full"></div>
         </div>
         
         <div className="grid md:grid-cols-2 gap-8">
           {skillCategories.map((category) => (
-            <div key={category.title} className="bg-gradient-to-br from-gray-50 to-blue-50 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <div key={category.title} className="bg-gradient-to-br from-gray-50 to-purple-50 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
               <div className="flex items-center mb-6">
-                <div className="text-blue-600 mr-4">
+                <div className="text-purple-600 mr-4">
                   {category.icon}
                 </div>
                 <h3 className="text-2xl font-semibold text-gray-900">
@@ -56,7 +56,7 @@ const Skills = () => {
                     </div>
                     <div className="w-full bg-gray-200 rounded-full h-2">
                       <div 
-                        className="bg-gradient-to-r from-blue-600 to-purple-600 h-2 rounded-full transition-all duration-1000 ease-out"
+                        className="bg-gradient-to-r from-purple-600 to-pink-600 h-2 rounded-full transition-all duration-1000 ease-out"
                         style={{ width: `${skill.level}%` }}
                       ></div>
                     </div>
