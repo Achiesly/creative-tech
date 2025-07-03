@@ -2,7 +2,7 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Github, Linkedin, Twitter, User } from "lucide-react";
+import { SiFreelancermap } from "react-icons/si";
 import { FaWhatsapp } from "react-icons/fa";
 import { RiTwitterXFill } from "react-icons/ri";
 
@@ -25,15 +25,17 @@ const Contact = () => {
             <div>
               <h3 className="text-xl sm:text-2xl font-semibold mb-3 sm:mb-4">Get In Touch</h3>
               <p className="text-gray-300 leading-relaxed text-sm sm:text-base">
-                Whether you have a project in mind, need technical consultation, or just want to say hello, 
-                I'm always excited to connect with fellow creators and innovators.
+            Whether you have a project in mind, need a fresh design perspective, or simply want 
+            to collaborate, I would love to hear from you. I offer professional web development, 
+            creative web design, and eye-catching graphic design, all tailored to bring your vision to life.
+            Let's create something impactful together!
               </p>
             </div>
             
             <div className="space-y-3 sm:space-y-4">
               <div className="flex items-center space-x-3 sm:space-x-4">
                 <div className="w-10 h-10 sm:w-12 sm:h-12 bg-emerald-600 rounded-full flex items-center justify-center flex-shrink-0">
-                  <User className="w-5 h-5 sm:w-6 sm:h-6" />
+                  <SiFreelancermap className="w-5 h-5 sm:w-6 sm:h-6" />
                 </div>
                 <div>
                   <h4 className="font-semibold text-sm sm:text-base">Professional</h4>
@@ -51,7 +53,7 @@ const Contact = () => {
               className="w-10 h-10 sm:w-12 sm:h-12 bg-green-600 hover:bg-emerald-600 rounded-full flex items-center justify-center transition-colors duration-300"
               aria-label="WhatsApp"
               >
-              <FaWhatsapp className="w-5 h-5 sm:w-6 sm:h-6" />
+              <FaWhatsapp className="w-4 h-4 sm:w-5 sm:h-5" />
               </a>
 
               <a
@@ -62,7 +64,7 @@ const Contact = () => {
               aria-label="Twitter"
               >
               
-              <RiTwitterXFill className="w-5 h-5 sm:w-6 sm:h-6" />
+              <RiTwitterXFill className="w-4 h-4 sm:w- sm:h-5" />
               </a>
             </div>
           </div>
@@ -114,7 +116,7 @@ const Contact = () => {
         </div>
         
         <div className="text-center mt-12 sm:mt-16 pt-6 sm:pt-8 border-t border-white/20">
-          <p className="text-gray-400 text-sm sm:text-base">
+          <p className="text-gray-300 text-sm sm:text-base">
             Copyright © {new Date().getFullYear()} Portfolio. All right reserved </p>
         </div>
       </div>
