@@ -27,12 +27,12 @@ const Hero = () => {
 
         {/* Hero Heading */}
         <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight mb-4 sm:mb-6 bg-gradient-to-r from-gray-900 via-emerald-800 to-teal-700 bg-clip-text text-transparent leading-tight">
-          Web Developer
+          Web Development
         </h1>
 
         {/* Subtitle */}
         <p className="text-lg sm:text-xl md:text-2xl text-gray-700 mb-8 max-w-3xl mx-auto leading-relaxed">
-          I craft beautiful, fast, and responsive websites using modern web technologies-focused on delivering delightful digital experiences.
+          CreativeTech builds fast, responsive, and visually engaging websites using the latest web technologies tailored for businesses and startups.
         </p>
 
         {/* Buttons */}
@@ -42,7 +42,7 @@ const Hero = () => {
             size="lg"
             className="bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 text-white px-8 py-3 rounded-full transition-all duration-300 transform w-full sm:w-auto"
           >
-            View My Work
+            View Projects
           </Button>
 
           <Button

@@ -16,7 +16,7 @@ const Contact = () => {
           </h2>
           <div className="w-16 sm:w-24 h-1 bg-gradient-to-r from-emerald-400 to-teal-400 mx-auto rounded-full"></div>
           <p className="text-lg sm:text-xl text-gray-300 mt-4 sm:mt-6 max-w-2xl mx-auto px-4">
-            Ready to bring your ideas to life? I'd love to hear about your project and discuss how we can create something amazing together.
+            Ready to get started? Tell us about your project, and let’s explore how we can work together to create something truly impactful.
           </p>
         </div>
         
@@ -25,10 +25,9 @@ const Contact = () => {
             <div>
               <h3 className="text-xl sm:text-2xl font-semibold mb-3 sm:mb-4">Get In Touch</h3>
               <p className="text-gray-300 leading-relaxed text-sm sm:text-base">
-            Whether you have a project in mind, need a fresh design perspective, or simply want 
-            to collaborate, I would love to hear from you. I offer professional web development, 
-            creative web design, and eye-catching graphic design, all tailored to bring your vision to life.
-            Let's create something impactful together!
+              CreativeTech collaborates with businesses, startups, and organizations to deliver tailored digital solutions
+              from sleek websites and engaging user interfaces to custom web apps and branding assets. Whether you're
+                starting from scratch or refreshing an existing brand, we’re here to turn your vision into reality.
               </p>
             </div>
             
@@ -38,8 +37,8 @@ const Contact = () => {
                   <SiFreelancermap className="w-5 h-5 sm:w-6 sm:h-6" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-sm sm:text-base">Professional</h4>
-                  <p className="text-gray-300 text-sm">Available for freelance projects</p>
+                  <h4 className="font-semibold text-sm sm:text-base"> Remote collaboration</h4>
+                  <p className="text-gray-300 text-sm">Accepting freelance and long-term projects</p>
                 </div>
               </div>
             </div>

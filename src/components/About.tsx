@@ -7,7 +7,7 @@ const About = () => {
 
         <div className="text-center mb-12 sm:mb-16">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 text-gray-900">
-            About Me
+            About Us
           </h2>
           <div className="w-16 sm:w-24 h-1 bg-gradient-to-r from-emerald-600 to-teal-600 mx-auto rounded-full"></div>
         </div>
@@ -16,17 +16,16 @@ const About = () => {
           {/* 🟢 LEFT SIDE: Text */}
           <div className="space-y-4 sm:space-y-6 order-2 lg:order-1">
             <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-4">
-              Passionate Web Developer & Designer
+              Delivering Modern Web Solutions
             </h3>
             <p className="text-gray-700 text-base sm:text-lg leading-relaxed">
-              I'm a dedicated web developer with expertise in modern web technologies. 
-              I love creating clean, efficient, and user-friendly websites that deliver 
-              exceptional experiences across all devices.
+            CreativeTech is a modern web design and development studio focused on building fast, responsive,
+             and user-centered websites. With expertise in the latest web technologies, we create digital experiences
+              that are not only visually compelling but also functional across all devices.
             </p>
             <p className="text-gray-700 text-base sm:text-lg leading-relaxed">
-              My approach combines technical excellence with creative design thinking, 
-              ensuring every project not only functions flawlessly but also captivates users 
-              with its visual appeal and intuitive interface.
+            Our approach combines clean code, creative design, and user-focused thinking ensuring every project delivers
+             both performance and impact.
             </p>
             <div className="flex flex-wrap gap-2 sm:gap-4 mt-4 sm:mt-6">
               {["Problem Solving", "Creative Design", "Clean Code", "User Experience"].map((trait) => (
@@ -38,7 +37,7 @@ const About = () => {
           </div>
 
           {/*RIGHT SIDE: Animated Character */}
-          <div className="relative order-1 lg:order-2 w-full h-[320px] sm:h-[400px] overflow-hidden max-w-6xl">
+          <div className="relative order-1 lg:order-2 w-full h-[320px] sm:h-[400px] overflow-hidden max-w-6xl rounded-xl">
             <AnimatedCharacter />
           </div>
         </div>

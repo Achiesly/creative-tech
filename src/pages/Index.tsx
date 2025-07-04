@@ -1,12 +1,14 @@
 
 import Hero from "@/components/Hero";
 import About from "@/components/About";
-import Skills from "@/components/Skills";
 import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
 import Navigation from "@/components/Navigation";
 import { Analytics } from "@vercel/analytics/react"
 import { SpeedInsights } from '@vercel/speed-insights/react';
+import Services from "@/components/Services";
+import Testimonials from "@/components/Testimonials";
+
 
 const Index = () => {
   return (
@@ -14,8 +16,9 @@ const Index = () => {
       <Navigation />
       <Hero />
       <About />
-      <Skills />
+      <Services />
       <Projects />
+      <Testimonials />
       <Contact />
       <Analytics />
       <SpeedInsights />
