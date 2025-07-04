@@ -127,44 +127,44 @@ const Testimonials = () => {
         {/* Slider */}
         <div ref={sliderRef} className="keen-slider -mx-2 md:-mx-4">
           {testimonials.map((t, index) => (
-            <motion.div
-              key={index}
-              className="keen-slider__slide bg-gray-50 border border-gray-200 rounded-2xl shadow-sm p-6 sm:p-8"
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              viewport={{ once: true }}
-            >
-              <div className="flex items-center gap-4 mb-4">
-                <img
-                  src={t.image}
-                  alt={t.name}
-                  className="w-12 h-12 rounded-full object-cover"
-                />
-                <div>
-                  <h4 className="text-md font-semibold text-gray-900">
-                    {t.name}
-                  </h4>
-                  <p className="text-sm text-gray-500">{t.title}</p>
-                </div>
-              </div>
-              <p className="text-gray-700 text-sm sm:text-base mb-4 leading-relaxed">
-                “{t.quote}”
-              </p>
-              <div className="flex gap-1">
-                {[...Array(5)].map((_, i) => (
-                  <Star
-                    key={i}
-                    className={`w-4 h-4 ${
-                      i < t.rating ? "text-yellow-400" : "text-gray-300"
-                    }`}
-                    fill={i < t.rating ? "#facc15" : "none"}
+            <div key={index} className="keen-slider__slide px-1 md:px-2">
+              <motion.div
+                className="bg-gray-50 border border-gray-200 rounded-2xl shadow-sm p-6 sm:p-8 h-full"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                viewport={{ once: true }}
+              >
+                <div className="flex items-center gap-4 mb-4">
+                  <img
+                    src={t.image}
+                    alt={t.name}
+                    className="w-12 h-12 rounded-full object-cover"
                   />
-                ))}
-              </div>
-            </motion.div>
+                  <div>
+                    <h4 className="text-md font-semibold text-gray-900">{t.name}</h4>
+                    <p className="text-sm text-gray-500">{t.title}</p>
+                  </div>
+                </div>
+                <p className="text-gray-700 text-sm sm:text-base mb-4 leading-relaxed">
+                  “{t.quote}”
+                </p>
+                <div className="flex gap-1">
+                  {[...Array(5)].map((_, i) => (
+                    <Star
+                      key={i}
+                      className={`w-4 h-4 ${
+                        i < t.rating ? "text-yellow-400" : "text-gray-300"
+                      }`}
+                      fill={i < t.rating ? "#facc15" : "none"}
+                    />
+                  ))}
+                </div>
+              </motion.div>
+            </div>
           ))}
         </div>
+
 
         {/* Pagination dots */}
         <div className="flex justify-center gap-2 mt-6">
