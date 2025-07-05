@@ -116,7 +116,7 @@ const Contact = () => {
         
         <div className="text-center mt-12 sm:mt-16 pt-6 sm:pt-8 border-t border-white/20">
           <p className="text-gray-300 text-sm sm:text-base">
-            Copyright © {new Date().getFullYear()} CreativeTech. All right reserved </p>
+             © {new Date().getFullYear()} CreativeTech. All rights reserved </p>
         </div>
       </div>
     </section>

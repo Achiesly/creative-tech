@@ -9,10 +9,9 @@ import { SpeedInsights } from '@vercel/speed-insights/react';
 import Services from "@/components/Services";
 import Testimonials from "@/components/Testimonials";
 
-
 const Index = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-gray-50 to-emerald-50">
+    <div className="min-h-screen flex flex-col bg-gradient-to-br from-slate-50 via-gray-50 to-emerald-50">
       <Navigation />
       <Hero />
       <About />
