@@ -16,11 +16,12 @@ const CreativeTechLogo = () => {
 
 {/* Logo Text */}
 <div className="flex flex-col">
-  <h1 className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-gray-800 leading-tight font-sora">
+  <h1 className="text-lg sm:text-lg md:text-2xl lg:text-2xl font-bold text-gray-800 leading-tight font-sora">
     <span className="text-gray-800 transition-colors duration-200">Creative</span>
     <span className="text-gray-800 transition-colors duration-200">Tech</span>
   </h1>
 </div>
+
 
 
     </div>
