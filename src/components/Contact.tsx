@@ -5,6 +5,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { SiFreelancermap } from "react-icons/si";
 import { FaWhatsapp } from "react-icons/fa";
 import { RiTwitterXFill } from "react-icons/ri";
+import { HiOutlineMail } from "react-icons/hi";
 
 const Contact = () => {
   return (
@@ -44,16 +45,23 @@ const Contact = () => {
             </div>
             
             <div className="flex space-x-3 sm:space-x-4 justify-start lg:justify-start">
-              
-              <a
-              href="https://wa.me/19297737403"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-10 h-10 sm:w-12 sm:h-12 bg-green-600 hover:bg-emerald-600 rounded-full flex items-center justify-center transition-colors duration-300"
-              aria-label="WhatsApp"
-              >
-              <FaWhatsapp className="w-4 h-4 sm:w-5 sm:h-5" />
-              </a>
+                <a
+                href="mailto:creativetechdesign12@gmail.com"
+                className="w-10 h-10 sm:w-12 sm:h-12 bg-blue-600 hover:bg-blue-700 rounded-full flex items-center justify-center transition-colors duration-300"
+                aria-label="Email"
+                >
+                <HiOutlineMail className="w-4 h-4 sm:w-5 sm:h-5" />
+                </a>
+
+                <a
+                href="https://wa.me/19297737403"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 sm:w-12 sm:h-12 bg-green-600 hover:bg-emerald-600 rounded-full flex items-center justify-center transition-colors duration-300"
+                aria-label="WhatsApp"
+                >
+                <FaWhatsapp className="w-4 h-4 sm:w-5 sm:h-5" />
+                </a>
 
               <a
               href="https://x.com/CreativeTech22"
