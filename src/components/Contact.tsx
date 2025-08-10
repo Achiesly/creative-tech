@@ -84,7 +84,7 @@ const Contact = () => {
         >
 
             {/* Redirect input */}
-          <input type="hidden" name="_redirect" value="https://creative-tech-xi.vercel.app/thank-you" />
+          <input type="hidden" name="_redirect" value="https://creative-tech/thank-you" />
 
           <div className="grid sm:grid-cols-2 gap-3 sm:gap-4">
             <Input 
